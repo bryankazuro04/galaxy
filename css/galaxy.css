@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:wght@300&display=swap&effect=neon");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:wght@500&display=swap&effect=fire|outline|emboss");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #aaa;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+nav {
+  padding: 1em;
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 100%);
+  z-index: 99999 !important;
+}
+
+nav .cont {
+  /* padding-bottom: 1em; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .cont h2 {
+  margin: 3em;
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-family: "Corinthia", cursive;
+  font-size: 3rem;
+}
+
+nav .cont h2:hover {
+  text-shadow: 0 0 10px rgb(93, 11, 224), 0 0 20px rgb(93, 11, 224), 0 0 20px rgb(93, 11, 224), 0 0 40px rgb(93, 11, 224), 0 0 60px rgb(93, 11, 224);
+}
+
+nav .nav-item {
+  margin-right: 3em;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+nav .nav-item a {
+  padding: 7px 1em;
+  color: rgb(15, 53, 221);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+nav .nav-item a:hover {
+  color: #255784;
+  background: #28e7ed;
+  font-weight: bold;
+  box-shadow: 0 0 10px #28e7ed, 0 0 40px #28e7ed, 0 0 80px #28e7ed;
+  transition-delay: 1s;
+}
+
+nav .nav-item a span {
+  position: absolute;
+  display: block;
+}
+
+nav .nav-item a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #28e7ed);
+}
+
+nav .nav-item a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+nav .nav-item a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #28e7ed);
+}
+
+nav .nav-item a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+nav .nav-item a span:nth-child(2) {
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #28e7ed);
+}
+
+nav .nav-item a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+nav .nav-item a span:nth-child(4) {
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #28e7ed);
+}
+
+nav .nav-item a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+/* Jumbootron */
+
+.head {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 4096px;
+  margin: auto;
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/* .header-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 45, 1);
+  background: url(../media/Cosmos\ -\ 17692.mp4);
+  background-size: cover;
+  z-index: 1;
+  opacity: 0.85;
+} */
+
+header .content {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99999;
+}
+
+header .content h1 {
+  padding: 0.5em;
+  padding-bottom: 0;
+  font-size: 100px;
+  font-style: italic;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+header .content .subtitle {
+  font-family: "EB Garamond", serif;
+  font-size: 1.7em;
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff;
+}
+
+header .content a {
+  margin: 20px;
+  padding: 5px 40px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 2px solid #f90;
+  border-radius: 2em;
+}
+
+header::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2%;
+  background: linear-gradient(to top, rgba(170, 170, 170, 1), transparent);
+}
+
+
+/* Jumbootron End */
+
+#highlight,
+#antariksa,
+#bintang,
+#planet {
+  padding: 8em;
+  padding-bottom: 1em;
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  background: #aaa;
+}
+
+#antariksa {
+  padding-top: 0.8em;
+  background: #999;
+}
+
+#bintang,
+#planet {
+  padding-top: 0.8em;
+}
+
+#highlight h1,
+#antariksa h1,
+#bintang h1,
+#planet h1 {
+  margin-bottom: 50px;
+  font-family: "Playfair Display", serif;
+  font-size: 2.7em;
+  text-align: center;
+}
+
+#highlight h1 {
+  text-shadow: 0 0 10px #222, 0 0 20px #222;
+}
+
+#antariksa h1,
+#bintang h1 {
+  margin-bottom: 30px;
+}
+
+#antariksa h1 {
+  text-shadow: 0 0 40px #000, 0 0 40px #000, 0 0 50px #000, 0 0 50px #000;
+}
+
+#highlight p,
+#antariksa p,
+#bintang p,
+#planet p {
+  margin: 50px 100px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+#bintang .bintang {
+  padding: 1em 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bintang .bintang p {
+  margin: 20px 15px;
+  margin-left: 70px;
+}
+
+#planet {
+  background: #999;
+}
+
+#planet .planet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#planet .planet h1 {
+  font-style: italic;
+  text-shadow: 0 0 10px #444d9e, 0 0 30px #444d9e, 0 0 40px #444d9e;
+}
+
+#planet .planet p {
+  margin-right: 50px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(170, 170, 170, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+footer p {
+  margin: 15px 0;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+footer p:hover {
+  text-shadow: 0 0 10px #28e7ed, 0 0 20px #28e7ed, 0 0 40px #28e7ed, 0 0 800px #28e7ed, 0 0 100px #28e7ed;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
