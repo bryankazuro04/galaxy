@@ -8,6 +8,7 @@ CSS Vanilla
 sedikit Java Script
 Animate On Scroll
 GSAP
+Google Font + API
 
 http://choros.epizy.com
 
