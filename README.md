@@ -5,6 +5,7 @@ Tapi karena waktunya gak cukup, project ini menjadi project santai sekalian memp
 
 Teknologi yang digunakan pada project ini:
 CSS Vanilla
+
 sedikit Java Script
 Animate On Scroll
 GSAP
