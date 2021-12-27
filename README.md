@@ -1,7 +1,7 @@
 Selamat datang di repository ini
 
 Ini awalnya mau dibuat sebagai tugas Mobile Programming (Dosennya minta buat program menggunakan bahasa program bebas yang kami mau, jadi saya buat ke dalam bentuk website).
-Tapi karena waktunya gak cukup, jadi ini jadi project santai sekalian memperdalam ilmu CSS saya.
+Tapi karena waktunya gak cukup, project ini menjadi project santai sekalian memperdalam ilmu CSS saya.
 
 Teknologi yang digunakan pada project ini:
 CSS Vanilla
