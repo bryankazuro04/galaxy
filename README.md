@@ -4,15 +4,10 @@ Ini awalnya mau dibuat sebagai tugas Mobile Programming (Dosennya minta buat pro
 Tapi karena waktunya gak cukup, project ini menjadi project santai sekalian memperdalam ilmu CSS saya.
 
 Teknologi yang digunakan pada project ini:
-
-CSS Vanilla
-
-sedikit Java Script
-
-Animate On Scroll
-
-GSAP
-
+CSS Vanilla, 
+sedikit JavaScript, 
+Animate On Scroll, 
+GSAP, 
 Google Font + API
 
 http://choros.epizy.com
